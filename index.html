@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nucleus.AI - Medical AI Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.1/smooth-scrollbar.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <svg class="logo-svg" viewBox="0 0 240 40" xmlns="http://www.w3.org/2000/svg">
+                <!-- Colorful Blocks -->
+                <g class="logo-blocks">
+                    <!-- Top Pink Block -->
+                    <rect x="0" y="0" width="40" height="12" rx="6" fill="#FF1493"/>
+                    
+                    <!-- Middle Teal Block -->
+                    <rect x="0" y="14" width="40" height="12" rx="6" fill="#40E0D0"/>
+                    
+                    <!-- Bottom Left Blue Block -->
+                    <rect x="0" y="28" width="18" height="12" rx="6" fill="#00BFFF"/>
+                    
+                    <!-- Bottom Right Yellow Block -->
+                    <rect x="22" y="28" width="18" height="12" rx="6" fill="#FFD700"/>
+                </g>
+                
+                <!-- Company Name -->
+                <text x="50" y="28" class="logo-text nucleus" fill="white" font-family="Inter, sans-serif" font-size="24" font-weight="600">NUCLEUS</text>
+                <text x="180" y="28" class="logo-text ai" fill="#0066cc" font-family="Inter, sans-serif" font-size="24" font-weight="600">.AI</text>
+            </svg>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <div class="scroll-journey">
+        <section class="journey-section human-body" id="human-body">
+            <div class="journey-content">
+                <h1>AI Revolution in Healthcare</h1>
+                <p>Transforming medical diagnostics through artificial intelligence and deep learning</p>
+                <div class="ai-insight">
+                    <h3>Neural Networks</h3>
+                    <p>Our AI processes millions of medical images with 99.9% accuracy</p>
+                </div>
+            </div>
+            <div class="journey-visual">
+                <video class="journey-video" autoplay playsinline loop muted>
+                    <source src="https://cdn.coverr.co/videos/coverr-medical-scan-of-a-human-body-1581/preview/video-preview.mp4" type="video/mp4">
+                </video>
+                <div class="scroll-indicator">
+                    <p>Experience the future of healthcare</p>
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
