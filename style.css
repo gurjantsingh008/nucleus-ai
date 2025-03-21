@@ -1074,3 +1074,207 @@ nav, .contact-nav {
     height: 40px;
     width: 240px;
 }
+
+/* AI Models Page Styles */
+.models-page {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.models-hero {
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+}
+
+.models-hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #FF1493, #40E0D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.models-hero p {
+    font-size: 1.2rem;
+    color: #cccccc;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.model-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.model-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.model-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #FF1493 0%, #40E0D0 100%);
+}
+
+.model-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.model-card p {
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.model-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.model-features li {
+    padding: 8px 0;
+    color: #ffffff;
+    position: relative;
+    padding-left: 25px;
+}
+
+.model-features li:before {
+    content: "•";
+    color: #40E0D0;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.model-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat .number {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #40E0D0;
+    margin-bottom: 5px;
+}
+
+.stat .label {
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+.model-details {
+    padding: 60px 40px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.detail-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.detail-card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #FF1493, #40E0D0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.step {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    position: relative;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #FF1493 0%, #40E0D0 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 auto 15px;
+}
+
+.step h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.step p {
+    color: #cccccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive Styles for Models Page */
+@media screen and (max-width: 768px) {
+    .models-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .models-grid {
+        padding: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .model-details {
+        padding: 40px 20px;
+    }
+
+    .detail-card h2 {
+        font-size: 2rem;
+    }
+
+    .process-steps {
+        grid-template-columns: 1fr;
+    }
+}
