@@ -502,7 +502,21 @@ nav, .contact-nav {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    nav {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
     .journey-content {
         max-width: 100%;
         padding: 1rem;
@@ -539,21 +553,40 @@ nav, .contact-nav {
     }
 }
 
-/* Section-specific styles */
-.human-body .journey-video {
-    clip-path: circle(0% at center);
+/* Tablet Specific Styles */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero {
+        padding: 80px 40px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .contact-form {
+        width: 80%;
+    }
 }
 
-.muscles .journey-video {
-    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%, 50% 50%);
-}
+/* Large Desktop Styles */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 
-.heart .journey-video {
-    clip-path: circle(0% at center);
-}
+    .hero h1 {
+        font-size: 4.5rem;
+    }
 
-.microscopic .journey-video {
-    clip-path: inset(50% round 20px);
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
 }
 
 /* Contact Page Styles */
